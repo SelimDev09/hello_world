@@ -4,7 +4,7 @@ public class HelloUniverse {
         int value = 8;
         System.out.println( phraseOne + value);
         String phraseTwo = "Il y a quelques années cependant, elles étaient au nombre de :";
-        value = 9;
+        value = ++value;
         System.err.println( phraseTwo + value);
     }
 }
