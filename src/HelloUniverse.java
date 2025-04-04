@@ -1,10 +1,18 @@
 public class HelloUniverse {
     public static void main(String[] args) throws Exception {
-        String phraseOne = "Aux dernières nouvelles, le nombre total de planètes dans le système solaire est de :";
+        
+        int annéeNum = 2003;
+        int annéeNum1 = 2003;
+        int annéeNum2 = 2014;
+
         int value = 8;
-        System.out.println( phraseOne + value);
-        String phraseTwo = "Il y a quelques années cependant, elles étaient au nombre de :";
-        value = ++value;
-        System.out.println( phraseTwo + value);
+        int value1 = 9;
+
+        if (annéeNum < 2006) {
+            System.out.printf("En %d, les planètes du système solaire étaient au nombre de : %d",annéeNum1, value1);
+        } else {
+            System.out.printf("En %d, les planètes du système solaire étaient au nombre de : %d",annéeNum2, value);
+        }
+
     }
 }
