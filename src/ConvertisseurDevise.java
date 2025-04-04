@@ -4,6 +4,6 @@ public class ConvertisseurDevise {
     double taux = 1.22;
     double result = somme * taux;
 
-    System.err.println(result);
+    System.out.println(result);
   }
 }

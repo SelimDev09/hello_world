@@ -5,16 +5,16 @@ public class OperateurIncréDecre {
     int valeurEntiere2;
 
     valeurEntiere2=++valeurEntiere;
-    System.err.println(valeurEntiere);
-    System.err.println(valeurEntiere2);
+    System.out.println(valeurEntiere);
+    System.out.println(valeurEntiere2);
 
     // Difference de l'emplacement du signe ++ && -- et l'effet de que cela fait
     int valeurEntiere3=5;
     int valeurEntiere4;
 
     valeurEntiere4=valeurEntiere3++;
-    System.err.println(valeurEntiere3);
-    System.err.println(valeurEntiere4);
+    System.out.println(valeurEntiere3);
+    System.out.println(valeurEntiere4);
     
   }
 }

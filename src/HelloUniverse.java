@@ -5,6 +5,6 @@ public class HelloUniverse {
         System.out.println( phraseOne + value);
         String phraseTwo = "Il y a quelques années cependant, elles étaient au nombre de :";
         value = ++value;
-        System.err.println( phraseTwo + value);
+        System.out.println( phraseTwo + value);
     }
 }
