@@ -1,30 +1,25 @@
 public class HelloUniverse {
     public static void main(String[] args) {
         
-        short annéeNum = 1700;
-
-
-        int value = 0;
-
-        if (annéeNum < 1600 || annéeNum > 2020) {
-                System.out.printf("Le programme ne peut pas fournir de résultat pour l'année %d",annéeNum);
-        } 
         
-        else {
+        int value = 10;
 
+        switch (value) {
+            case 7:
+                System.out.println("On sait qu'au 16ème siècle, seules 7 planètes avaient été découvertes");
+                break;
+
+            case 8:
+                System.out.println("On sait que le nombre de planètes est passé de 7 à 8 au 17ème siècle, mais il a également été réduit de 9 à 8 en 2006");
+                break;
             
-            if (annéeNum < 1700) {
-                value = 7;
-            }
-            if (annéeNum < 2006) {
-                value = 9;
-            } 
-
-            else{
-                value = 8;
-            }
-
-            System.out.printf("En %d, les planètes du système solaire étaient au nombre de : %d",annéeNum, value);
+            case 9:
+                System.out.println("On sait que le nombre de planètes est passé de 8 à 9 au 18ème siècle et ce jusqu'en 2006, où ce nombre a été réduit à 8");
+                break;
+        
+            default:
+            System.out.printf("Le programme ne peut pas fournir de résultat pour %d", value);
+                break;
         }
 
 
