@@ -1,18 +1,34 @@
 public class HelloUniverse {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
-        int annéeNum = 2003;
-        int annéeNum1 = 2003;
-        int annéeNum2 = 2014;
+        short annéeNum = 1700;
 
-        int value = 8;
-        int value1 = 9;
 
-        if (annéeNum < 2006) {
-            System.out.printf("En %d, les planètes du système solaire étaient au nombre de : %d",annéeNum1, value1);
-        } else {
-            System.out.printf("En %d, les planètes du système solaire étaient au nombre de : %d",annéeNum2, value);
+        int value = 0;
+
+        if (annéeNum < 1600 || annéeNum > 2020) {
+                System.out.printf("Le programme ne peut pas fournir de résultat pour l'année %d",annéeNum);
+        } 
+        
+        else {
+
+            
+            if (annéeNum < 1700) {
+                value = 7;
+            }
+            if (annéeNum < 2006) {
+                value = 9;
+            } 
+
+            else{
+                value = 8;
+            }
+
+            System.out.printf("En %d, les planètes du système solaire étaient au nombre de : %d",annéeNum, value);
         }
 
+
     }
+
+
 }
