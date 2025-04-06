@@ -1,7 +1,9 @@
 public class HelloUniverse {
     public static void main(String[] args) {
         
+    Voiture voitoireDeTata = new Voiture();
         
+
     for (int index = 7; index <=9; index++) {
 
         switch (index) {
