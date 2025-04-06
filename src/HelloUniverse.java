@@ -1,8 +1,15 @@
 public class HelloUniverse {
     public static void main(String[] args) {
         
-    Voiture voitoireDeTata = new Voiture();
-        
+    Voiture voitureDeTata = new Voiture();
+    voitureDeTata.nbPortes = 3;
+    voitureDeTata.automatique = false;
+    voitureDeTata.couleur = "vert";
+
+    System.out.println("Voiture est" + voitureDeTata.couleur);
+
+
+
 
     for (int index = 7; index <=9; index++) {
 
