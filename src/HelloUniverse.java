@@ -1,38 +1,39 @@
 public class HelloUniverse {
     public static void main(String[] args) {
-        
-    Voiture voitureDeTata = new Voiture();
-    voitureDeTata.nbPortes = 3;
-    voitureDeTata.automatique = false;
-    voitureDeTata.couleur = "vert";
-
-    System.out.println("Voiture est" + voitureDeTata.couleur);
-
+        Planete Mercure = new Planete();
+        Planete Venus = new Planete();
+        Planete Terre = new Planete();
+        Planete Mars = new Planete();
+        Planete Jupiter = new Planete();
+        Planete Saturne = new Planete();
 
 
+        Mercure.diametre = 	4880;
+        Mercure.matiere = "Tellurique";
+        Mercure.nom = "Mercure";
 
-    for (int index = 7; index <=9; index++) {
+        Venus.diametre = 	12100;
+        Venus.matiere = "Tellurique";
+        Venus.nom = "Venus";
 
-        switch (index) {
-                case 7:
-                System.out.println("On sait qu'au 16ème siècle, seules 7 planètes avaient été découvertes");
-                break;
-                
-                case 8:
-                System.out.println("On sait que le nombre de planètes est passé de 7 à 8 au 17ème siècle, mais il a également été réduit de 9 à 8 en 2006");
-                break;
-                
-                case 9:
-                System.out.println("On sait que le nombre de planètes est passé de 8 à 9 au 18ème siècle et ce jusqu'en 2006, où ce nombre a été réduit à 8");
-                break;
-                
-                default:
-                System.out.printf("Le programme ne peut pas fournir de résultat pour %d", index);
-                break;
-            }
-        }
+        Terre.diametre = 12756;
+        Terre.matiere = "Tellurique";
+        Terre.nom = "Terre";
+
+        Mars.diametre = 	6792;
+        Mars.matiere = "Tellurique";
+        Mars.nom = "Mars";
+
+        Jupiter.diametre = 		142984;
+        Jupiter.matiere = "Gazeuse";
+        Jupiter.nom = "Jupiter";
+
+        Saturne.diametre = 	120536;
+        Saturne.matiere = "Gazeuse";
+        Saturne.nom = "Saturne";
 
 
+        System.out.println(Jupiter.nom +" est une planète " + Jupiter.matiere + " avec un diametre de " + Jupiter.diametre + " Kilometre" );
     }
 
 
