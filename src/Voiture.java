@@ -10,5 +10,9 @@ public class Voiture {
   // Par default char sans valeur /u000
   char premeireLettrePlauqe;
 
+  //Méthode Avancer, reculer*
 
+  void klaxonner(){
+    System.out.println("tutu!!!");
+  }
 }
