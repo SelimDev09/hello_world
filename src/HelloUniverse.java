@@ -6,6 +6,7 @@ public class HelloUniverse {
         Planete Mars = new Planete();
         Planete Jupiter = new Planete();
         Planete Saturne = new Planete();
+        Planete X = new Planete();
 
 
         Mercure.diametre = 	4880;
@@ -33,7 +34,7 @@ public class HelloUniverse {
         Saturne.nom = "Saturne";
 
 
-        System.out.println(Jupiter.nom +" est une planète " + Jupiter.matiere + " avec un diametre de " + Jupiter.diametre + " Kilometre" );
+        System.out.println(X.nom +" est une planète " + X.matiere + " avec un diametre de " + X.diametre + " Kilometre" );
     }
 
 
