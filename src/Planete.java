@@ -28,6 +28,10 @@ public class Planete {
         totalVisiteur = totalVisiteur + 50  ;
         break;
     }
-
   }
+  Atmoshphere atmosphere;
+
+
+
+
 }

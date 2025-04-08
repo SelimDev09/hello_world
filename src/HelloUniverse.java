@@ -7,6 +7,7 @@ public class HelloUniverse {
         Planete Jupiter = new Planete();
         Planete Saturne = new Planete();
         Planete Neptune = new Planete();
+        Planete Uranus = new Planete();
         Planete X = new Planete();
 
 
@@ -38,7 +39,10 @@ public class HelloUniverse {
         Neptune.matiere = "Gazeuse";
         Neptune.nom = "Neptune";
 
-
+        Uranus.nom = "Uranus";
+        Uranus.diametre = 51118;
+        Uranus.matiere = "Gazeuse";
+    /* 
         System.out.println(X.nom +" est une planète " + X.matiere + " avec un diametre de " + X.diametre + " Kilometre" );
     
         Neptune.rotation(-3542);
@@ -49,11 +53,36 @@ public class HelloUniverse {
         Mars.acceuillirVaisseau(8);
         Mars.acceuillirVaisseau("FREGATE");
         System.out.println("Le nombre d'humains ayant déjà séjourné sur Mars est actuellement de " + Mars.totalVisiteur);
+    */
+        Atmoshphere atmosphere = new Atmoshphere();
+        atmosphere.tauxHydrogene = 83;
+        atmosphere.tauxHelium = 15;
+        atmosphere.tauxMethane = 2.5f;
     
-    
-    
-    
-    
+        System.out.println(
+            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxHydrogene + "% d'hydrogène"
+        );
+        System.out.println(
+            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxArgon + "% d'argon"
+        );
+        System.out.println(
+            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxDioxydeDeCarbone + "% de dioxyde de carbone"
+        );
+        System.out.println(
+            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxAzote + "% d'azote"
+        );
+        System.out.println(
+            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxHelium + "% hélium"
+        );
+        System.out.println(
+            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxMethane + "% de méthane"
+        );
+        System.out.println(
+            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxSodium + "% de sodium"
+        );
+        
+        
+        
     }
 
 

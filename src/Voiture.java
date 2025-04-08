@@ -17,6 +17,10 @@ public class Voiture {
   //Surcharge methode
   int vitesseCourante;
 
+  // Des propriétés sous forme d'objet + appelle de la class pour l'utilisation des proprietes
+  Moteur moteur;
+
+
 
   void klaxonner(){
     System.out.println("tutu!!!");
