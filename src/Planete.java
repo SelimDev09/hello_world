@@ -1,6 +1,7 @@
 public class Planete {
   String nom;
   String matiere;
+  static String forme="Sphérique";
   long diametre;
   int totalVisiteur=0;
   

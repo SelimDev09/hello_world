@@ -52,6 +52,27 @@ public class HelloWorld {
     Ville ville = new Ville();
     ville.nom = "Paris";
     voitureDeSimone.transporter(passager, ville);
-    
+    System.out.println(
+      "le nombre de roues de Simone" +
+      voitureDeSimone.nbrRoues
+    );
+    System.out.println(
+      // plus commun d'utiliser de la facon suivante car cela est commun a totutes les voitures
+      "le nombre de roues " +
+      Voiture.nbrRoues
+    );
+
+    //on peut changer la valeur des roues
+    Voiture.nbrRoues = 6;
+
+    System.out.println(
+      "le nombre de roues de Simone " +
+      voitureDeSimone.nbrRoues
+    );
+    System.out.println(
+      // plus commun d'utiliser de la facon suivante car cela est commun a totutes les voitures
+      "le nombre de roues " +
+      Voiture.nbrRoues
+    );
   }
 }

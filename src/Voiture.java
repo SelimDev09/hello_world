@@ -1,6 +1,6 @@
 public class Voiture {
   
-  //Propriété
+  //Propriété 
   //Par default 0,0
   int nbPortes;
   // Par default = false
@@ -9,6 +9,10 @@ public class Voiture {
   String couleur;
   // Par default char sans valeur /u000
   char premeireLettrePlauqe;
+
+  //Propriété dite statique car elle commune à toute les voitures, la valeur est definit par la classe dite aussi variable de classe
+  // Variable d'instance differe selon l'objet 
+  static int nbrRoues = 4;
 
   // Sera utiliser pour passer les rapport entre la valeur initiale et l'execution de la methode
   int rapportCourant;
