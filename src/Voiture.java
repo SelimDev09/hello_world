@@ -58,4 +58,10 @@ public class Voiture {
   void tournerDeux(String droiteOuGauche, int angle){
     System.out.println("La voiture Tata va touner à" + droiteOuGauche + " d'un angle de " + angle);
   }
+
+  
+  void transporter(Passager passager, Ville villeDepart){
+    System.out.println("Je transporte un passager qui s'appelle " + passager.nom + " " + passager.prenom + " depuis la ville " + villeDepart.nom);
+
+  }
 }

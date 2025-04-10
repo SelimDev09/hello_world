@@ -49,39 +49,52 @@ public class HelloUniverse {
         Mars.rotation(-684);
         Venus.rotation(1250);
         Neptune.revolution(-9);
-        
-        Mars.acceuillirVaisseau(8);
-        Mars.acceuillirVaisseau("FREGATE");
-        System.out.println("Le nombre d'humains ayant déjà séjourné sur Mars est actuellement de " + Mars.totalVisiteur);
-    */
-        Atmoshphere atmosphere = new Atmoshphere();
-        atmosphere.tauxHydrogene = 83;
-        atmosphere.tauxHelium = 15;
-        atmosphere.tauxMethane = 2.5f;
     
+    
+        Atmoshphere atmosphere = new Atmoshphere();
+        atmosphere.tauxHydrogene = 83f;
+        atmosphere.tauxHelium = 15f;
+        atmosphere.tauxMethane = 2.5f;
+        
         System.out.println(
-            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxHydrogene + "% d'hydrogène"
+        "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxHydrogene + "% d'hydrogène"
         );
         System.out.println(
             "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxArgon + "% d'argon"
         );
         System.out.println(
             "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxDioxydeDeCarbone + "% de dioxyde de carbone"
-        );
-        System.out.println(
-            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxAzote + "% d'azote"
+            );
+            System.out.println(
+                "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxAzote + "% d'azote"
         );
         System.out.println(
             "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxHelium + "% hélium"
-        );
-        System.out.println(
-            "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxMethane + "% de méthane"
-        );
+            );
+            System.out.println(
+                "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxMethane + "% de méthane"
+                );
         System.out.println(
             "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxSodium + "% de sodium"
-        );
-        
-        
+            );
+    */   
+    Vaisseau typeVaisseau1 = new Vaisseau();
+
+    typeVaisseau1.nmbPassagers = 9;
+    typeVaisseau1.typeVaisseau = "Frégate";
+    
+    
+    Vaisseau typeVaisseau2 = new Vaisseau();
+    
+    typeVaisseau2.nmbPassagers = 42;
+    typeVaisseau2.typeVaisseau = "Croisseur";
+    Mars.acceuillirVaisseau(typeVaisseau1);
+    Mars.acceuillirVaisseau(typeVaisseau2);
+
+    System.out.println("Le nombre d'humains ayant déjà séjourné sur "+ Mars.nom
+    +" est actuellement de "
+    + Mars.totalVisiteur +
+    ".");
         
     }
 

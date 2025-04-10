@@ -46,9 +46,12 @@ public class HelloWorld {
     System.out.println("le nombre de cylindre de la voiture de Tata est de " + voitureDeTata.moteur.nbCylindres);
   
   
-  
-  
-  
-  
+    Passager passager = new Passager();
+    passager.nom = "Dupont";
+    passager.prenom = "Moreti";
+    Ville ville = new Ville();
+    ville.nom = "Paris";
+    voitureDeSimone.transporter(passager, ville);
+    
   }
 }
