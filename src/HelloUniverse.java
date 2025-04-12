@@ -104,6 +104,7 @@ public class HelloUniverse {
         System.out.println(
             Planete.expansion(14.2)
         );
+        System.out.println(Planete.nbPlaneteDecouvertes);
     }
 
 }

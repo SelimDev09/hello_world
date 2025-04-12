@@ -24,7 +24,9 @@ public class Voiture {
   // Des propriétés sous forme d'objet + appelle de la class pour l'utilisation des proprietes
   Moteur moteur;
 
-
+  Voiture(){
+    System.out.println("Ceci est une voiture en cours de construction");
+  }
 
   static void klaxonner(){
     System.out.println("tutu!!!");

@@ -4,9 +4,14 @@ public class Planete {
   static String forme="Sphérique";
   long diametre;
   int totalVisiteur=0;
-  
+  static int nbPlaneteDecouvertes = 0;
   Atmoshphere atmosphere;
   Vaisseau vaisseauAccoste;
+
+  
+  Planete(){
+    nbPlaneteDecouvertes = ++nbPlaneteDecouvertes;
+  }
 
 
   void revolution(int tour){
