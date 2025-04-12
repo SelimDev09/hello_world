@@ -74,5 +74,8 @@ public class HelloWorld {
       "le nombre de roues " +
       Voiture.nbrRoues
     );
+
+    Voiture.klaxonner();
+    Voiture.tourner(true, 45);
   }
 }

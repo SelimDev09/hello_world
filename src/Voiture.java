@@ -26,7 +26,7 @@ public class Voiture {
 
 
 
-  void klaxonner(){
+  static void klaxonner(){
     System.out.println("tutu!!!");
   }
 
@@ -49,7 +49,7 @@ public class Voiture {
     return rapportCourant;
   }
 
-  void tourner(boolean droite, int angle){
+  static void tourner(boolean droite, int angle){
     String droiteOuGauche=null;
     if (droite) {
       droiteOuGauche = "Droite";
