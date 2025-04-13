@@ -1,4 +1,4 @@
-public class Voiture {
+public class Voiture extends VehiculeAMoteur{
   
   //Propriété 
   //Par default 0,0
@@ -18,11 +18,12 @@ public class Voiture {
   int rapportCourant;
   //Méthode Avancer, reculer*
 
-  //Surcharge methode
-  int vitesseCourante;
 
-  // Des propriétés sous forme d'objet + appelle de la class pour l'utilisation des proprietes
-  Moteur moteur;
+  void transporter(Passager passager, Ville villeDepart){
+    System.out.println("La voiture transporte un passager qui s'appelle " + passager.nom + " " + passager.prenom + " depuis la ville " + villeDepart.nom);
+
+  }
+
 
 
   Voiture(){
@@ -38,15 +39,6 @@ public class Voiture {
     System.out.println("tutu!!!");
   }
 
-  int accelerer(){
-    System.out.println("J'accelere");
-    return 100;
-  }
-
-  int accelerer(int vitessePlus){
-    System.out.println("J'accelere");
-    return vitesseCourante+vitessePlus;
-  }
 
   int passerRapport(boolean augmenter){
     if (augmenter) {
@@ -72,8 +64,5 @@ public class Voiture {
   }
 
   
-  void transporter(Passager passager, Ville villeDepart){
-    System.out.println("Je transporte un passager qui s'appelle " + passager.nom + " " + passager.prenom + " depuis la ville " + villeDepart.nom);
 
-  }
 }
