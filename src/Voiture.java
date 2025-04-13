@@ -24,8 +24,14 @@ public class Voiture {
   // Des propriétés sous forme d'objet + appelle de la class pour l'utilisation des proprietes
   Moteur moteur;
 
+
   Voiture(){
-    System.out.println("Ceci est une voiture en cours de construction");
+    System.out.println("Ceci est une voiture est en cours de construction sans parametre");
+  }
+
+  Voiture(String couleur){
+    this.couleur=couleur;
+    System.out.println("Ceci est une voiture en cours de construction avec un parametre couleur");
   }
 
   static void klaxonner(){

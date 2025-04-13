@@ -1,10 +1,10 @@
 public class HelloWorld {
   public static void main(String[] args) {
             
-    Voiture voitureDeTata = new Voiture();
+    Voiture voitureDeTata = new Voiture("Jaune");
     voitureDeTata.nbPortes = 3;
     voitureDeTata.automatique = false;
-    voitureDeTata.couleur = "vert";
+    voitureDeTata.couleur = "Verte";
     /*
     System.out.println("Voiture est" + voitureDeTata.couleur);
      */

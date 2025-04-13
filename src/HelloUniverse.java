@@ -1,45 +1,45 @@
 public class HelloUniverse {
     public static void main(String[] args) {
 
-        Planete Mercure = new Planete();
-        Planete Venus = new Planete();
-        Planete Terre = new Planete();
-        Planete Mars = new Planete();
-        Planete Jupiter = new Planete();
-        Planete Saturne = new Planete();
-        Planete Neptune = new Planete();
-        Planete Uranus = new Planete();
-        Planete X = new Planete();
+        Planete Mercure = new Planete("Mercure");
+        Planete Venus = new Planete("Venus");
+        Planete Terre = new Planete("Terre");
+        Planete Mars = new Planete("Mars");
+        Planete Jupiter = new Planete("Jupiter");
+        Planete Saturne = new Planete("Saturne");
+        Planete Neptune = new Planete("Neptune");
+        Planete Uranus = new Planete("Uranus");
+        Planete X = new Planete("X");
 
         Mercure.diametre = 	4880;
         Mercure.matiere = "Tellurique";
-        Mercure.nom = "Mercure";
+        //Mercure.nom = "Mercure";
 
         Venus.diametre = 	12100;
         Venus.matiere = "Tellurique";
-        Venus.nom = "Venus";
+        //Venus.nom = "Venus";
 
         Terre.diametre = 12756;
         Terre.matiere = "Tellurique";
-        Terre.nom = "Terre";
+        //Terre.nom = "Terre";
 
         Mars.diametre = 	6792;
         Mars.matiere = "Tellurique";
-        Mars.nom = "Mars";
+        //Mars.nom = "Mars";
 
         Jupiter.diametre = 		142984;
         Jupiter.matiere = "Gazeuse";
-        Jupiter.nom = "Jupiter";
+        //Jupiter.nom = "Jupiter";
 
         Saturne.diametre = 	120536;
         Saturne.matiere = "Gazeuse";
-        Saturne.nom = "Saturne";
+        //Saturne.nom = "Saturne";
 
         Neptune.diametre = 	49532;
         Neptune.matiere = "Gazeuse";
-        Neptune.nom = "Neptune";
+        //Neptune.nom = "Neptune";
 
-        Uranus.nom = "Uranus";
+        //Uranus.nom = "Uranus";
         Uranus.diametre = 51118;
         Uranus.matiere = "Gazeuse";
         /* 
