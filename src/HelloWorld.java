@@ -1,7 +1,12 @@
 public class HelloWorld {
   public static void main(String[] args) {
             
-    Voiture voitureDeTata = new Voiture("Jaune");
+    VehiculeAMoteur voitureDeTata = new Voiture("Jaune");
+    // Transtypage
+    // Premeire solution est de creer une nouvelle variable :
+    // Voiture voitureDeTataSousFormeDeVoiture=(Voiture)voitureDeTata;
+    // 2me solution est le transtypage à la volet : 
+    //
     voitureDeTata.nbPortes = 3;
     voitureDeTata.automatique = false;
     voitureDeTata.couleur = "Verte";
