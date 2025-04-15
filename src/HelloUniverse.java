@@ -77,7 +77,7 @@ public class HelloUniverse {
         System.out.println(
             "L'atmosphere" + Uranus.nom + "est composée A " + atmosphere.tauxSodium + "% de sodium"
             );
-        */   
+
         Vaisseau typeVaisseau1 = new Vaisseau();
 
         typeVaisseau1.nmbPassagers = 9;
@@ -95,7 +95,7 @@ public class HelloUniverse {
         +" est actuellement de "
         + Mars.totalVisiteur +
         ".");
-
+        */  
         System.out.println("La forme d'une planète est : " + Planete.forme);
         System.out.println("la forme de " + Mars.nom + " est " + Planete.forme);
         System.out.println(
@@ -105,6 +105,33 @@ public class HelloUniverse {
             Planete.expansion(14.2)
         );
         System.out.println(Planete.nbPlaneteDecouvertes);
+        
+        VaisseauDeguerre vaisseauTypeOne = new VaisseauDeguerre();
+        vaisseauTypeOne.typeVaisseau = "Chasseur";
+        vaisseauTypeOne.blindage = 156;
+        vaisseauTypeOne.resistanceDuBouclier = 2;
+        
+        VaisseauCivil vaisseauTypeTwo = new VaisseauCivil();
+        vaisseauTypeTwo.typeVaisseau = "Vaisseau-Monde";
+        vaisseauTypeTwo.blindage = 4784;
+        vaisseauTypeTwo.resistanceDuBouclier = 30;
+
+        vaisseauTypeTwo.activerBouclier();
+        vaisseauTypeOne.activerBouclier();
+
+        vaisseauTypeOne.attack(vaisseauTypeTwo, "Lasers photoniques", 3);
+
+        vaisseauTypeTwo.desactiverBouclier();
+
+        System.out.println(vaisseauTypeTwo.resistanceDuBouclier);
+        System.out.println(vaisseauTypeTwo.blindage);
+
+    
+    
+    
+    
+    
+    
     }
 
 }
