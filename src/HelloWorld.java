@@ -83,7 +83,7 @@ public class HelloWorld {
 
     UsineDAssemblageVoiture ua = new UsineDAssemblageVoiture();
 
-    Voiture v= ua.assemblage();
+    Voiture v= ua.assemble();
 
   }
 }
