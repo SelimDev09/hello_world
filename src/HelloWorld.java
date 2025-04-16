@@ -1,6 +1,7 @@
 public class HelloWorld {
   public static void main(String[] args) {
-    
+
+    /*
     VehiculeAMoteur voitureDeTata = new Voiture("Jaune");
     // Transtypage
     // Premeire solution est de creer une nouvelle variable :
@@ -9,22 +10,20 @@ public class HelloWorld {
     ((Voiture)voitureDeTata).nbPortes = 3;
     ((Voiture)voitureDeTata).automatique = false;
     ((Voiture)voitureDeTata).couleur = "Verte";
-    /*
+
     System.out.println("Voiture est" + voitureDeTata.couleur);
-     */
 
     ((Voiture)voitureDeTata).klaxonner();
-    /*System.out.println(      voitureDeTata.accelerer()
+    System.out.println(      voitureDeTata.accelerer()
     );
-    */
+    
     ((Voiture)voitureDeTata).passerRapport(true);
     ((Voiture)voitureDeTata).passerRapport(true);
-    /*
-     * 
-     System.out.println(
-       voitureDeTata.passerRapport(false) 
-      );
-     */
+
+    System.out.println(
+      voitureDeTata.passerRapport(false) 
+    );
+    
     ((Voiture)voitureDeTata).tourner(false, 45);
     ((Voiture)voitureDeTata).tournerDeux("droite", 45);
 
@@ -80,5 +79,11 @@ public class HelloWorld {
 
     Voiture.klaxonner();
     Voiture.tourner(true, 45);
+    */
+
+    UsineDAssemblageVoiture ua = new UsineDAssemblageVoiture();
+
+    Voiture v= ua.assemblage();
+
   }
 }
