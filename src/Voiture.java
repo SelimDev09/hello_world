@@ -17,6 +17,9 @@ public class Voiture extends VehiculeAMoteur{
   // Sera utiliser pour passer les rapport entre la valeur initiale et l'execution de la methode
   int rapportCourant;
   //Méthode Avancer, reculer*
+  Voiture(){
+    super(new Moteur());
+  }
 
 
   void transporter(Passager passager, Ville villeDepart){
@@ -25,12 +28,13 @@ public class Voiture extends VehiculeAMoteur{
   }
 
 
-
-  Voiture(){
-    System.out.println("Ceci est une voiture est en cours de construction sans parametre");
+  Voiture (Moteur moteur) {
+    this();
   }
 
+
   Voiture(String couleur){
+    this();
     this.couleur=couleur;
     System.out.println("Ceci est une voiture en cours de construction avec un parametre couleur");
   }

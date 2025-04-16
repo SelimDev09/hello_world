@@ -6,6 +6,12 @@ public class VehiculeAMoteur {
   //Surcharge methode
   int vitesseCourante;
 
+    VehiculeAMoteur (Moteur moteur) {
+      this.moteur=moteur;
+      System.out.println("Une voiture est construite avec le moteur");
+    }
+
+    
 
   int accelerer(int vitessePlus){
     System.out.println("J'accelere");

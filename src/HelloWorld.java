@@ -1,42 +1,40 @@
 public class HelloWorld {
   public static void main(String[] args) {
-            
+    
     VehiculeAMoteur voitureDeTata = new Voiture("Jaune");
     // Transtypage
     // Premeire solution est de creer une nouvelle variable :
     // Voiture voitureDeTataSousFormeDeVoiture=(Voiture)voitureDeTata;
     // 2me solution est le transtypage à la volet : 
-    //
-    voitureDeTata.nbPortes = 3;
-    voitureDeTata.automatique = false;
-    voitureDeTata.couleur = "Verte";
+    ((Voiture)voitureDeTata).nbPortes = 3;
+    ((Voiture)voitureDeTata).automatique = false;
+    ((Voiture)voitureDeTata).couleur = "Verte";
     /*
     System.out.println("Voiture est" + voitureDeTata.couleur);
      */
 
-    voitureDeTata.klaxonner();
+    ((Voiture)voitureDeTata).klaxonner();
     /*System.out.println(      voitureDeTata.accelerer()
     );
     */
-    voitureDeTata.passerRapport(true);
-    voitureDeTata.passerRapport(true);
+    ((Voiture)voitureDeTata).passerRapport(true);
+    ((Voiture)voitureDeTata).passerRapport(true);
     /*
      * 
      System.out.println(
        voitureDeTata.passerRapport(false) 
       );
      */
-    voitureDeTata.tourner(false, 45);
-    voitureDeTata.tournerDeux("droite", 45);
+    ((Voiture)voitureDeTata).tourner(false, 45);
+    ((Voiture)voitureDeTata).tournerDeux("droite", 45);
 
 
-    Voiture voitureDeSimone = new Voiture();
-    voitureDeSimone.nbPortes = 5;
     // creation du moteur + valorisation des proprietes 
     Moteur moteur = new Moteur();
     moteur.carburateur="Diesel";
     moteur.nbCylindres=6;
-
+    Voiture voitureDeSimone = new Voiture(moteur);
+    voitureDeSimone.nbPortes = 5;
     //Affectation de la propriete à la voiture de tata
     voitureDeTata.moteur=moteur;
 
