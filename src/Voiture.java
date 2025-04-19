@@ -1,4 +1,4 @@
-public class Voiture extends VehiculeAMoteur{
+public class Voiture extends VehiculeAMoteur implements Vidangeable{
   
   //Propriété 
   //Par default 0,0
@@ -65,6 +65,12 @@ public class Voiture extends VehiculeAMoteur{
 
   void tournerDeux(String droiteOuGauche, int angle){
     System.out.println("La voiture Tata va touner à" + droiteOuGauche + " d'un angle de " + angle);
+  }
+
+
+  @Override
+  public void vidanger() {
+    System.out.println("Dévicer le bouchon sous la culasse et attendre que cela coule.");
   }
 
   

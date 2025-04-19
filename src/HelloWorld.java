@@ -85,5 +85,10 @@ public class HelloWorld {
 
     Voiture v= ua.assemble();
 
+    Bateau b = new Bateau();
+    b.masse = 60;
+    Port p = new Port();
+    p.acceuilleEngin(b);
+
   }
 }
