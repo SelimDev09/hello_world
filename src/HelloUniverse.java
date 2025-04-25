@@ -1,47 +1,47 @@
 public class HelloUniverse {
     public static void main(String[] args) {
 
-        Planete Mercure = new Planete("Mercure");
-        Planete Venus = new Planete("Venus");
-        Planete Terre = new Planete("Terre");
-        Planete Mars = new Planete("Mars");
-        Planete Jupiter = new Planete("Jupiter");
-        Planete Saturne = new Planete("Saturne");
-        Planete Neptune = new Planete("Neptune");
-        Planete Uranus = new Planete("Uranus");
+        PlaneteTellurique Mercure = new PlaneteTellurique("Mercure");
+        PlaneteTellurique Venus = new PlaneteTellurique("Venus");
+        PlaneteTellurique Terre = new PlaneteTellurique("Terre");
+        PlaneteTellurique Mars = new PlaneteTellurique("Mars");
+        PlaneteGazeuse Jupiter = new PlaneteGazeuse("Jupiter");
+        PlaneteGazeuse Saturne = new PlaneteGazeuse("Saturne");
+        PlaneteGazeuse Neptune = new PlaneteGazeuse("Neptune");
+        PlaneteGazeuse Uranus = new PlaneteGazeuse ("Uranus");
         Planete X = new Planete("X");
 
         Mercure.diametre = 	4880;
-        Mercure.matiere = "Tellurique";
+        //Mercure.matiere = "Tellurique";
         //Mercure.nom = "Mercure";
 
         Venus.diametre = 	12100;
-        Venus.matiere = "Tellurique";
+        //Venus.matiere = "Tellurique";
         //Venus.nom = "Venus";
 
         Terre.diametre = 12756;
-        Terre.matiere = "Tellurique";
+        //Terre.matiere = "Tellurique";
         //Terre.nom = "Terre";
 
         Mars.diametre = 	6792;
-        Mars.matiere = "Tellurique";
+        //Mars.matiere = "Tellurique";
         //Mars.nom = "Mars";
 
         Jupiter.diametre = 		142984;
-        Jupiter.matiere = "Gazeuse";
+        //Jupiter.matiere = "Gazeuse";
         //Jupiter.nom = "Jupiter";
 
         Saturne.diametre = 	120536;
-        Saturne.matiere = "Gazeuse";
+        //Saturne.matiere = "Gazeuse";
         //Saturne.nom = "Saturne";
 
         Neptune.diametre = 	49532;
-        Neptune.matiere = "Gazeuse";
+        //Neptune.matiere = "Gazeuse";
         //Neptune.nom = "Neptune";
 
         //Uranus.nom = "Uranus";
         Uranus.diametre = 51118;
-        Uranus.matiere = "Gazeuse";
+        //Uranus.matiere = "Gazeuse";
         /* 
         System.out.println(X.nom +" est une planète " + X.matiere + " avec un diametre de " + X.diametre + " Kilometre" );
     
@@ -95,7 +95,7 @@ public class HelloUniverse {
         +" est actuellement de "
         + Mars.totalVisiteur +
         ".");
-        */  
+         
         System.out.println("La forme d'une planète est : " + Planete.forme);
         System.out.println("la forme de " + Mars.nom + " est " + Planete.forme);
         System.out.println(
@@ -105,7 +105,7 @@ public class HelloUniverse {
             Planete.expansion(14.2)
         );
         System.out.println(Planete.nbPlaneteDecouvertes);
-        
+    */     
         VaisseauDeguerre vaisseauTypeOne = new VaisseauDeguerre();
         vaisseauTypeOne.typeVaisseau = "Chasseur";
         vaisseauTypeOne.blindage = 156;
@@ -125,13 +125,28 @@ public class HelloUniverse {
 
         System.out.println(vaisseauTypeTwo.resistanceDuBouclier);
         System.out.println(vaisseauTypeTwo.blindage);
+    
+    Vaisseau typeVaisseau1 = new Vaisseau();
 
-    
-    
-    
-    
-    
-    
+        typeVaisseau1.nmbPassagers = 9;
+        typeVaisseau1.typeVaisseau = "Frégate";
+        
+        
+        Vaisseau typeVaisseau2 = new Vaisseau();
+        
+        typeVaisseau2.nmbPassagers = 42;
+        typeVaisseau2.typeVaisseau = "Croisseur";
+
+        /* 
+        System.out.println("Le nombre d'humains ayant déjà séjourné sur "+ Mars.nom
+        +" est actuellement de "
+        + Mars.totalVisiteur +
+        ".");
+        */
+        Mars.acceuillirVaisseau(vaisseauTypeTwo);
+
+        Mars.acceuillirVaisseau(vaisseauTypeOne);
+        
     }
 
 }
