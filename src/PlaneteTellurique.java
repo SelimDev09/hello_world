@@ -4,7 +4,7 @@ public class PlaneteTellurique extends  Planete implements Habitable{
   public Vaisseau acceuillirVaisseau(Vaisseau vaisseau){
     
     if (vaisseau instanceof VaisseauDeguerre) {
-      ((VaisseauDeguerre) vaisseau).desactiverArmes();
+      ((VaisseauDeguerre) vaisseau).activerBouclier();
     }
     
     

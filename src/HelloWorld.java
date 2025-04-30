@@ -78,7 +78,7 @@ public class HelloWorld {
 
     Voiture.klaxonner();
     Voiture.tourner(true, 45);
-    */
+    
 
     UsineDAssemblageVoiture ua = new UsineDAssemblageVoiture();
 
@@ -88,6 +88,8 @@ public class HelloWorld {
     b.masse = 60;
     Port p = new Port();
     p.acceuilleEngin(b);
+  */
 
+  
   }
 }

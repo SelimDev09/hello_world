@@ -106,20 +106,20 @@ public class HelloUniverse {
         );
         System.out.println(Planete.nbPlaneteDecouvertes);
     */     
-        VaisseauDeguerre vaisseauTypeOne = new VaisseauDeguerre();
-        ((Vaisseau)   vaisseauTypeOne).typeVaisseau = "Chasseur";
+        Vaisseau vaisseauTypeOne = new VaisseauDeguerre();
+        vaisseauTypeOne.typeVaisseau = "Chasseur";
         vaisseauTypeOne.blindage = 156;
         vaisseauTypeOne.resistanceDuBouclier = 2;
         
-        VaisseauCivil vaisseauTypeTwo = new VaisseauCivil();
+        Vaisseau vaisseauTypeTwo = new VaisseauCivil();
         vaisseauTypeTwo.typeVaisseau = "Vaisseau-Monde";
         vaisseauTypeTwo.blindage = 4784;
         vaisseauTypeTwo.resistanceDuBouclier = 30;
 
         vaisseauTypeTwo.activerBouclier();
-        vaisseauTypeOne.activerBouclier();
+        ((VaisseauDeguerre)  vaisseauTypeOne).activerBouclier();
 
-        vaisseauTypeOne.attack(vaisseauTypeTwo, "Lasers photoniques", 3);
+        ((VaisseauDeguerre)  vaisseauTypeOne).attack(vaisseauTypeTwo, "Lasers photoniques", 3);
 
         vaisseauTypeTwo.desactiverBouclier();
 

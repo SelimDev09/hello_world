@@ -16,4 +16,9 @@ public class VaisseauDeguerre extends Vaisseau{
     System.out.println("Desactivation des armes d'un vaisseau de type "+ this.typeVaisseau);
   }
   
+  @Override
+  void activerBouclier() {
+    desactiverArmes();
+    super.activerBouclier();    
+  }
 }
