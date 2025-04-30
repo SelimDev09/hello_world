@@ -107,7 +107,7 @@ public class HelloUniverse {
         System.out.println(Planete.nbPlaneteDecouvertes);
     */     
         VaisseauDeguerre vaisseauTypeOne = new VaisseauDeguerre();
-        vaisseauTypeOne.typeVaisseau = "Chasseur";
+        ((Vaisseau)   vaisseauTypeOne).typeVaisseau = "Chasseur";
         vaisseauTypeOne.blindage = 156;
         vaisseauTypeOne.resistanceDuBouclier = 2;
         

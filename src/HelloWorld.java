@@ -12,7 +12,6 @@ public class HelloWorld {
     ((Voiture)voitureDeTata).couleur = "Verte";
 
     System.out.println("Voiture est" + voitureDeTata.couleur);
-
     ((Voiture)voitureDeTata).klaxonner();
     System.out.println(      voitureDeTata.accelerer()
     );

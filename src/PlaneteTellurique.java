@@ -2,6 +2,12 @@ public class PlaneteTellurique extends  Planete implements Habitable{
 
   // Decris les vaisseaux et si il y a un vaisseau ou pas sinon un vaisseau doit s'en aller
   public Vaisseau acceuillirVaisseau(Vaisseau vaisseau){
+    
+    if (vaisseau instanceof VaisseauDeguerre) {
+      ((VaisseauDeguerre) vaisseau).desactiverArmes();
+    }
+    
+    
     if (vaisseauAccoste == null) {
       System.out.println(" Aucun vaisseau ne s'en va.");
     } else{
