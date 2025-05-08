@@ -1,0 +1,64 @@
+{
+  // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+  // Pointez pour afficher la description des attributs existants.
+  // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Condition",
+      "request": "launch",
+      "mainClass": "Condition",
+      "projectName": "firstJAVA_314c5a46"
+    },
+    {
+      "type": "java",
+      "name": "ConvertisseurDevise",
+      "request": "launch",
+      "mainClass": "ConvertisseurDevise",
+      "projectName": "firstJAVA_314c5a46"
+    },
+    {
+      "type": "java",
+      "name": "FormatageChaine",
+      "request": "launch",
+      "mainClass": "FormatageChaine",
+      "projectName": "firstJAVA_314c5a46"
+    },
+    {
+      "type": "java",
+      "name": "HelloUniverse",
+      "request": "launch",
+      "mainClass": "HelloUniverse",
+      "projectName": "firstJAVA_314c5a46"
+    },
+    {
+      "type": "java",
+      "name": "HelloWorld",
+      "request": "launch",
+      "mainClass": "HelloWorld",
+      "projectName": "firstJAVA_314c5a46"
+    },
+    {
+      "type": "java",
+      "name": "OperateurIncréDecre",
+      "request": "launch",
+      "mainClass": "OperateurIncréDecre",
+      "projectName": "firstJAVA_314c5a46"
+    },
+    {
+      "type": "java",
+      "name": "variable",
+      "request": "launch",
+      "mainClass": "variable",
+      "projectName": "firstJAVA_314c5a46"
+    }
+  ]
+}

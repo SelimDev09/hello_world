@@ -9,7 +9,7 @@ public class HelloUniverse {
         PlaneteGazeuse Saturne = new PlaneteGazeuse("Saturne");
         PlaneteGazeuse Neptune = new PlaneteGazeuse("Neptune");
         PlaneteGazeuse Uranus = new PlaneteGazeuse ("Uranus");
-        Planete X = new Planete("X");
+        PlaneteGazeuse X = new PlaneteGazeuse("X");                 
 
         Mercure.diametre = 	4880;
         //Mercure.matiere = "Tellurique";
@@ -106,8 +106,8 @@ public class HelloUniverse {
         );
         System.out.println(Planete.nbPlaneteDecouvertes);
     */     
-        Vaisseau vaisseauTypeOne = new VaisseauDeguerre();
-        vaisseauTypeOne.typeVaisseau = "Chasseur";
+        Vaisseau vaisseauTypeOne = new VaisseauDeguerre("Chasseur");
+        //vaisseauTypeOne.typeVaisseau = "Chasseur";
         vaisseauTypeOne.blindage = 156;
         vaisseauTypeOne.resistanceDuBouclier = 2;
         
@@ -126,16 +126,16 @@ public class HelloUniverse {
         System.out.println(vaisseauTypeTwo.resistanceDuBouclier);
         System.out.println(vaisseauTypeTwo.blindage);
     
-    Vaisseau typeVaisseau1 = new Vaisseau();
+        Vaisseau typeVaisseau1 = new VaisseauDeguerre("Fregate");
 
         typeVaisseau1.nmbPassagers = 9;
-        typeVaisseau1.typeVaisseau = "Frégate";
+        //typeVaisseau1.typeVaisseau = "Frégate";
         
         
-        Vaisseau typeVaisseau2 = new Vaisseau();
+        Vaisseau typeVaisseau2 = new VaisseauDeguerre("Fregate");
         
         typeVaisseau2.nmbPassagers = 42;
-        typeVaisseau2.typeVaisseau = "Croisseur";
+        //typeVaisseau2.typeVaisseau = "Croisseur";
 
         /* 
         System.out.println("Le nombre d'humains ayant déjà séjourné sur "+ Mars.nom
@@ -147,6 +147,22 @@ public class HelloUniverse {
 
         Mars.acceuillirVaisseau(vaisseauTypeOne);
         
+
+        Vaisseau vaisseauChasseur = new VaisseauDeguerre("Chasseur");
+
+        Terre.acceuillirVaisseau(vaisseauChasseur);
+        
+        System.out.println("Un chasseur a refusé de transporter " + vaisseauChasseur.emporterCargo(20) + 
+        " tonnes.");
+
+        Vaisseau vaisseauFregate = new VaisseauDeguerre("Fregate");
+        Terre.acceuillirVaisseau(vaisseauFregate);
+        vaisseauFregate.nmbPassagers = 100;
+        System.out.println("Un fregate a refusé de transporter " + vaisseauFregate.emporterCargo(45) + 
+        " tonnes.");
+        System.out.println("Un fregate a refusé de transporter " + vaisseauFregate.emporterCargo(12) + 
+        " tonnes.");
+
     }
 
 }

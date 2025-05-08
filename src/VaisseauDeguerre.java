@@ -2,6 +2,22 @@ public class VaisseauDeguerre extends Vaisseau{
   
 
   boolean armeDesactive;
+  
+  VaisseauDeguerre(String typeVaisseau){
+    this.typeVaisseau = typeVaisseau;
+    switch (typeVaisseau) {
+      case "Chasseur":
+        tonnageMax = 0;
+        break;
+      case "Fregate":
+        tonnageMax = 50;
+        break;
+      case "Croiseur":
+        tonnageMax = 100;
+        break;
+    }
+  }
+  
   void attack(Vaisseau cible, String arme, int timeAttack) {
     if (armeDesactive == true) {
       System.out.println("Attaque impossible.");
@@ -19,6 +35,32 @@ public class VaisseauDeguerre extends Vaisseau{
   @Override
   void activerBouclier() {
     desactiverArmes();
-    super.activerBouclier();    
+    super.activerBouclier();
+  }
+  int emporterCargo(int cargo) {
+    if (this.typeVaisseau == "Chasseur") {
+      return cargo;
+    } 
+    else {
+      if (nmbPassagers <12) {
+        return cargo;
+      }
+      else{
+        //tonnage passager pouvant accepter le cargo
+        int cargoPassager = nmbPassagers*2;
+        //Tonnage disponible à embarquer
+        int tonnageRestant = tonnageMax - tonnageActuel;
+        int tonnageAConsiderer = (cargoPassager < tonnageRestant ? cargoPassager : tonnageRestant);
+        if (cargo>tonnageAConsiderer) {
+          tonnageActuel = tonnageMax;
+          return cargo-tonnageAConsiderer;
+        }
+        else{
+          tonnageActuel += cargo;
+          return 0;
+        }
+      }
+      
+    }
   }
 }
