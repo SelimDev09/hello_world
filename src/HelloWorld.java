@@ -1,6 +1,26 @@
 public class HelloWorld {
   public static void main(String[] args) {
+    // rien n'est executé apres
+    // System.exit(1); = par convencion il y a une erreur
+    //System.exit(1);
 
+    // afficher le temps en millisecondes 
+    // nanosecondes => souvent pour calculer le temps qui s'ecoule
+    long time = System.currentTimeMillis();
+    long timeStart = System.nanoTime();
+    // afficher une phrase ou variable
+    System.out.println("Hello World ! je suis un affichage java");
+    long timeEnd = System.nanoTime();
+    System.out.println("Temps d'execution : " + (timeEnd - timeStart));
+    
+    // afficher une erreur
+    System.err.println("Oups ! je suis un affichage java");
+
+    // System.exit(0); = que tout c'est bien passé
+    //System.exit(0);
+
+    // afficher les propriétés du systeme
+    System.out.println( System.getProperties());
     /*
     VehiculeAMoteur voitureDeTata = new Voiture("Jaune");
     // Transtypage
