@@ -1,5 +1,36 @@
+import java.util.Scanner;
+
 public class HelloWorld {
   public static void main(String[] args) {
+
+
+    System.out.println("Hello World ! je suis un affichage java");
+    // System.in = l'entree standard generalement le clavier et ne permet pas de lire la ligne suivante
+    //Scanner est un objet qui permet de lire et d'analyser les données saisies par l'utilisateur
+    Scanner sc = new Scanner(System.in);
+    // lire une ligne pour pouvoir la logger il faut l'ecrirer dans le terminal
+    String ligneSuivant = sc.nextLine();
+
+    System.out.println("Voici la ligne suivante : " + ligneSuivant);
+    //pareil mais un int
+    int nbreSuivant = sc.nextInt();
+    System.out.println("Voici le nombre suivant : " + nbreSuivant);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     // rien n'est executé apres
     // System.exit(1); = par convencion il y a une erreur
     //System.exit(1);
@@ -11,17 +42,18 @@ public class HelloWorld {
     // afficher une phrase ou variable
     System.out.println("Hello World ! je suis un affichage java");
     long timeEnd = System.nanoTime();
+
     System.out.println("Temps d'execution : " + (timeEnd - timeStart));
     
     // afficher une erreur
     System.err.println("Oups ! je suis un affichage java");
 
     // System.exit(0); = que tout c'est bien passé
-    //System.exit(0);
+    System.exit(0);
 
     // afficher les propriétés du systeme
     System.out.println( System.getProperties());
-    /*
+    
     VehiculeAMoteur voitureDeTata = new Voiture("Jaune");
     // Transtypage
     // Premeire solution est de creer une nouvelle variable :
