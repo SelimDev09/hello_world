@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HelloUniverse {
     public static void main(String[] args) {
 
@@ -95,7 +97,7 @@ public class HelloUniverse {
         +" est actuellement de "
         + Mars.totalVisiteur +
         ".");
-         
+        
         System.out.println("La forme d'une planète est : " + Planete.forme);
         System.out.println("la forme de " + Mars.nom + " est " + Planete.forme);
         System.out.println(
@@ -105,14 +107,14 @@ public class HelloUniverse {
             Planete.expansion(14.2)
         );
         System.out.println(Planete.nbPlaneteDecouvertes);
-    */     
+
         Vaisseau vaisseauTypeOne = new VaisseauDeguerre("Chasseur");
         //vaisseauTypeOne.typeVaisseau = "Chasseur";
         vaisseauTypeOne.blindage = 156;
         vaisseauTypeOne.resistanceDuBouclier = 2;
         
-        Vaisseau vaisseauTypeTwo = new VaisseauCivil();
-        vaisseauTypeTwo.typeVaisseau = "Vaisseau-Monde";
+        Vaisseau vaisseauTypeTwo = new VaisseauCivil("vaisseau-monde");
+        //vaisseauTypeTwo.typeVaisseau = "Vaisseau-Monde";
         vaisseauTypeTwo.blindage = 4784;
         vaisseauTypeTwo.resistanceDuBouclier = 30;
 
@@ -137,12 +139,12 @@ public class HelloUniverse {
         typeVaisseau2.nmbPassagers = 42;
         //typeVaisseau2.typeVaisseau = "Croisseur";
 
-        /* 
+        
         System.out.println("Le nombre d'humains ayant déjà séjourné sur "+ Mars.nom
         +" est actuellement de "
         + Mars.totalVisiteur +
         ".");
-        */
+        
         Mars.acceuillirVaisseau(vaisseauTypeTwo);
 
         Mars.acceuillirVaisseau(vaisseauTypeOne);
@@ -163,6 +165,79 @@ public class HelloUniverse {
         System.out.println("Un fregate a refusé de transporter " + vaisseauFregate.emporterCargo(12) + 
         " tonnes.");
 
+        Vaisseau vaisseauFregate2 = new VaisseauDeguerre("Fregate");
+        Terre.acceuillirVaisseau(vaisseauFregate2);
+        vaisseauFregate2.nmbPassagers = 14;
+        System.out.println("Un fregate a refusé de transporter " + vaisseauFregate2.emporterCargo(30) + 
+        " tonnes.");
+        
+        Vaisseau vaisseauMonde = new VaisseauCivil("Vaisseau-Monde");
+        Terre.acceuillirVaisseau(vaisseauMonde);
+        System.out.println("Un vaisseau-monde a refusé de transporter " + vaisseauMonde.emporterCargo(1560) + 
+        " tonnes.");
+        System.out.println("Un vaisseau-monde a refusé de transporter " + vaisseauMonde.emporterCargo(600) + 
+        " tonnes.");
+        */
+
+        Vaisseau vaisseauChasseur = new VaisseauDeguerre("Chasseur");
+        
+        Vaisseau vaisseauFregate = new VaisseauDeguerre("Fregate");
+        vaisseauFregate.nmbPassagers = 24;
+        Vaisseau vaisseauCroiseur = new VaisseauDeguerre("Croiseur");
+
+        Vaisseau vaisseauCargo = new VaisseauCivil("Vaisseau-Cargo");
+
+        Vaisseau vaisseauMonde = new VaisseauCivil("Vaisseau-Monde");
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Quel vaisseau voulez-vous selectionner ?");
+        String vaisseauSelectionne = sc.nextLine();
+
+        System.out.println("Quelle est la planete sur laquelle vous voulez aller ? ( Mercure, Venus, Terre ou Mars )");
+        String planeteSelectionne = sc.nextLine();
+
+        System.out.println("Quel est le tonnage de votre cargo ?");
+        int tonnageCargo = sc.nextInt();
+
+        Vaisseau vaisseau = null;
+        switch (vaisseauSelectionne) {
+            case "Chasseur":
+                vaisseau  = vaisseauChasseur;
+                break;
+            case "Fregate":
+                vaisseau = vaisseauFregate;
+                break;
+            case "Croiseur":
+                vaisseau = vaisseauCroiseur;
+                break;
+            case "Vaisseau-Cargo":
+                vaisseau = vaisseauCargo;
+                break;
+            case "Vaisseau-Monde":
+                vaisseau = vaisseauMonde;
+                break;
+        }
+
+        Planete planete = null;
+        switch (planeteSelectionne) {
+            case "Mercure":
+                planete = Mercure;
+                break;
+            case "Venus":
+                planete = Venus;
+                break;
+            case "Terre":
+                planete = Terre;
+                break;
+            case "Mars":
+                planete = Mars;
+                break;
+        }
+    planete.acceuillirVaisseau(vaisseau);
+    int tonnageRejeter = vaisseau.emporterCargo(tonnageCargo);  
+    System.out.println("Le vaisseau " + vaisseauSelectionne + " a refusé de transporter " + tonnageRejeter + 
+    " tonnes.");
     }
 
 }

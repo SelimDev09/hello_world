@@ -1,8 +1,8 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class HelloWorld {
   public static void main(String[] args) {
-
+  /*
 
     System.out.println("Hello World ! je suis un affichage java");
     // System.in = l'entree standard generalement le clavier et ne permet pas de lire la ligne suivante
@@ -17,20 +17,7 @@ public class HelloWorld {
     System.out.println("Voici le nombre suivant : " + nbreSuivant);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
+    
     // rien n'est executé apres
     // System.exit(1); = par convencion il y a une erreur
     //System.exit(1);

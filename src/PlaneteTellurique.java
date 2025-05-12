@@ -1,6 +1,8 @@
 public class PlaneteTellurique extends  Planete implements Habitable{
 
   // Decris les vaisseaux et si il y a un vaisseau ou pas sinon un vaisseau doit s'en aller
+  /*
+   * 
   public Vaisseau acceuillirVaisseau(Vaisseau vaisseau){
     
     if (vaisseau instanceof VaisseauDeguerre) {
@@ -26,7 +28,7 @@ public class PlaneteTellurique extends  Planete implements Habitable{
     totalVisiteur = totalVisiteur + vaisseau.nmbPassagers;
     return vaisseauPrecedent;
   }
-
+  */
   PlaneteTellurique(String nom) {
     super(nom);
     //TODO Auto-generated constructor stub

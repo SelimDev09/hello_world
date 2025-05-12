@@ -5,6 +5,8 @@ public abstract class Vaisseau {
   int resistanceDuBouclier;
   int tonnageMax;
   int tonnageActuel;
+
+
   void activerBouclier() {
     System.out.println("Activation du bouclier d'un vaisseau de type " + this.typeVaisseau);
   }
