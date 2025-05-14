@@ -15,7 +15,7 @@ public class Voiture extends VehiculeAMoteur implements Vidangeable{
   static int nbrRoues = 4;
 
   // Sera utiliser pour passer les rapport entre la valeur initiale et l'execution de la methode
-  int rapportCourant;
+  Integer rapportCourant;
   //Méthode Avancer, reculer*
   Voiture(){
     super(new Moteur());

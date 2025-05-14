@@ -129,6 +129,21 @@ public class HelloWorld {
     p.acceuilleEngin(b);
   */
 
+  // Classe conteneur ou Wrapper
+
+  Integer i = Integer.valueOf(5);
+  int j = i.intValue();
+  System.out.println(j);
+
+  Float f = Float.valueOf(12.2f);
+  // conversion de la chaine de caractere en float
+  Float f2 = Float.valueOf("12.2f");
+  System.out.println(f2 + f);
+  float f3 = f.floatValue();
+  System.out.println(f3);
+
+  Voiture v = new Voiture();
+  v.rapportCourant = Integer.valueOf(0);
   
   }
 }
