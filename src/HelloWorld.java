@@ -115,35 +115,63 @@ public class HelloWorld {
       Voiture.nbrRoues
     );
 
-    Voiture.klaxonner();
-    Voiture.tourner(true, 45);
+      Voiture.klaxonner();
+      Voiture.tourner(true, 45);
+      
+
+      UsineDAssemblageVoiture ua = new UsineDAssemblageVoiture();
+
+      Voiture v= ua.assemble();
+
+      Bateau b = new Bateau();
+      b.masse = 60;
+      Port p = new Port();
+      p.acceuilleEngin(b);
+    */
+
+    // Classe conteneur ou Wrapper
+
+    Integer i = Integer.valueOf(5);
+    int j = i.intValue();
+    System.out.println(j);
+
+    Float f = Float.valueOf(12.2f);
+    // conversion de la chaine de caractere en float
+    Float f2 = Float.valueOf("12.2f");
+    System.out.println(f2 + f);
+    float f3 = f.floatValue();
+    System.out.println(f3);
+
+    Voiture v = new Voiture();
+    v.rapportCourant = Integer.valueOf(0);
     
+    // conversion des types
+    int i3 = Integer.valueOf("16");
+    String i4 = String.valueOf(i3);
+    System.out.println(i4);
 
-    UsineDAssemblageVoiture ua = new UsineDAssemblageVoiture();
+    // les types enuméré => restraindre le type bool à une gamme pre determiner
+    v.typeBoite = TypeBoiteAuto.SEMI_AUTO;
+    System.out.println("le type de boite est " + v.typeBoite.nomTypeBoite);
 
-    Voiture v= ua.assemble();
+    // les tableaux
+    // 0 -> 4
+    int[] tabDeInt = new int[5];
+    // 5 caractere vide
+    char[] tableDeChar = new char[5];
+    // 5 null par defaut
+    Voiture[] tabDeVoiture = new Voiture[5];
 
-    Bateau b = new Bateau();
-    b.masse = 60;
-    Port p = new Port();
-    p.acceuilleEngin(b);
-  */
+    tabDeInt[1] = 15;
+    tabDeInt[4] = 20;
+    System.out.println("La valeur du deuxieme element est " + tabDeInt[1]);
 
-  // Classe conteneur ou Wrapper
-
-  Integer i = Integer.valueOf(5);
-  int j = i.intValue();
-  System.out.println(j);
-
-  Float f = Float.valueOf(12.2f);
-  // conversion de la chaine de caractere en float
-  Float f2 = Float.valueOf("12.2f");
-  System.out.println(f2 + f);
-  float f3 = f.floatValue();
-  System.out.println(f3);
-
-  Voiture v = new Voiture();
-  v.rapportCourant = Integer.valueOf(0);
-  
+    tabDeVoiture[1] = v;
+    v.couleur = "noir";
+    tabDeVoiture[2] = new Voiture("rouge");
+    System.out.println("Le deuxieme element de voiture est " + tabDeVoiture[1].couleur);
+    
+    // Recuperer la taille du tableau
+    System.out.println("La taille du tableau est " + tabDeInt.length);
   }
 }

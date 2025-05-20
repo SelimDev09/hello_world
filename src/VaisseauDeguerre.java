@@ -3,17 +3,19 @@ public class VaisseauDeguerre extends Vaisseau{
 
   boolean armeDesactive;
   
-  VaisseauDeguerre(String typeVaisseau){
+  VaisseauDeguerre(TypeVaisseau typeVaisseau){
     this.typeVaisseau = typeVaisseau;
     switch (typeVaisseau) {
-      case "Chasseur":
+      case CHASSEUR:
         tonnageMax = 0;
         break;
-      case "Fregate":
+      case FREGATE:
         tonnageMax = 50;
         break;
-      case "Croiseur":
+      case CROISEUR:
         tonnageMax = 100;
+        break;
+      default:
         break;
     }
   }
@@ -38,7 +40,7 @@ public class VaisseauDeguerre extends Vaisseau{
     super.activerBouclier();
   }
   int emporterCargo(int cargo) {
-    if (this.typeVaisseau == "Chasseur") {
+    if (this.typeVaisseau == TypeVaisseau.CHASSEUR) {
       return cargo;
     } 
     else {

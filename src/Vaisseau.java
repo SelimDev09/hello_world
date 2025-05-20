@@ -1,5 +1,5 @@
 public abstract class Vaisseau {
-  String typeVaisseau;
+  TypeVaisseau typeVaisseau;
   int nmbPassagers;
   int blindage;
   int resistanceDuBouclier;

@@ -1,13 +1,15 @@
 public class VaisseauCivil extends Vaisseau{
 
-  VaisseauCivil(String typeVaisseau) {
+  VaisseauCivil(TypeVaisseau typeVaisseau) {
     this.typeVaisseau = typeVaisseau;
     switch (typeVaisseau) {
-      case "CARGO ":
+      case CARGO:
         tonnageMax = 500;
         break;
-      case "Vaisseau-Monde":
+      case VAISSEAUMONDE:
         tonnageMax = 2000;
+        break;
+      default:
         break;
     }
   }
