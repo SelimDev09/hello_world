@@ -6,8 +6,8 @@ public abstract class Planete {
   int totalVisiteur=0;
   static int nbPlaneteDecouvertes = 0;
   Atmoshphere atmosphere;
-  Vaisseau vaisseauAccoste;
-
+  //Vaisseau vaisseauAccoste;
+  
   
   Planete(String nom){
     this.nom = nom;
@@ -23,15 +23,15 @@ public abstract class Planete {
     System.out.println("Je suis la planète "+ nom + " et je tourne sur moi-même à " + angleRotation+"°");
   }
   
-
-  // combien de passager à acceuilli
-  void baieAccostage(){
-    System.out.println("Le nombre d'humains ayant déjà séjourné sur "+ nom
-    +" est actuellement de "
-    + totalVisiteur +
-    ".");
-  }
-
+  /* 
+    // combien de passager à acceuilli
+    void baieAccostage(){
+      System.out.println("Le nombre d'humains ayant déjà séjourné sur "+ nom
+      +" est actuellement de "
+      + totalVisiteur +
+      ".");
+    }
+  */
   static String expansion(double  distance){
     if (distance < 14) {
       return "Oh la la mais c'est super rapide !";
@@ -42,13 +42,13 @@ public abstract class Planete {
   }
 
 
-  public Vaisseau acceuillirVaisseau(Vaisseau vaisseau){
+  public void acceuillirVaisseau(Vaisseau vaisseau){
     
     if (vaisseau instanceof VaisseauDeguerre) {
       ((VaisseauDeguerre) vaisseau).activerBouclier();
     }
     
-    
+    /* 
     if (vaisseauAccoste == null) {
       System.out.println(" Aucun vaisseau ne s'en va.");
     } else{
@@ -57,16 +57,19 @@ public abstract class Planete {
       " doit s'en aller.");
     }
     // vaisseauPrecedent prends la valeur du  vaisseau accoster
-    Vaisseau vaisseauPrecedent = vaisseauAccoste;
+    //Vaisseau vaisseauPrecedent = vaisseauAccoste;
     //System.err.println("val 1 :" + vaisseauAccoste);
     // Le vaisseau accoste prends la valeur du vaisseau pour le vider des ses valeurs
     vaisseauAccoste = vaisseau;
     //System.err.println("val 2 :" + vaisseauAccoste);
     //System.err.println("val 3 :" + vaisseau);
     // le ttviseteur s'increment à chaque vaisseau accosté
+    */
     totalVisiteur = totalVisiteur + vaisseau.nmbPassagers;
-    return vaisseauPrecedent;
+    //return vaisseauPrecedent;
   }
+
+
 
 
 }
