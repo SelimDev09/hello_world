@@ -25,10 +25,13 @@ public class Voiture extends VehiculeAMoteur implements Vidangeable{
     super(new Moteur());
   }
 
-
-  void transporter(Passager passager, Ville villeDepart){
+  // Ellipses ou varargs
+  // le varargs ... apres le dernier argument il peut y avoir plusieurs arguments qui sra tranformé en tableau
+  // pas plus d'une ellipse par methode et elle doit etre à la fin des params
+  void transporter(Passager passager, Ville villeDepart, Ville... villeEtapes){
     System.out.println("La voiture transporte un passager qui s'appelle " + passager.nom + " " + passager.prenom + " depuis la ville " + villeDepart.nom);
-
+    System.out.println("la premiere ville etape est " + villeEtapes[0].nom);
+    System.out.println("la longueur du tableau est " + villeEtapes.length);
   }
 
 

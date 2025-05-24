@@ -174,6 +174,32 @@ public class HelloWorld {
     // Recuperer la taille du tableau
     System.out.println("La taille du tableau est " + tabDeInt.length);
   
+
+    Passager passager = new Passager();
+    passager.nom = "Dupont";
+    passager.prenom = "Moreti";
+    Ville villeDepart = new Ville();
+    villeDepart.nom = "Paris";
+
+    Ville villeEtape1 = new Ville();
+    villeEtape1.nom = "Lyon";
+
+    Ville villeEtape2 = new Ville();
+    villeEtape2.nom = "Marseille";
+
+    Ville villeEtape3 = new Ville();
+    villeEtape3.nom = "Lille";
+    /*
+     * Ancienne methode
+     * Ville[] villeEtapes = new Ville[3];
+      villeEtapes[0] = villeEtape1;
+      villeEtapes[1] = villeEtape2;
+      villeEtapes[2] = villeEtape3;
+     * Depuis java 5 on peut utiliser cette facon ci-dessous
+     */
+    
+
+    v.transporter(passager, villeDepart, villeEtape1, villeEtape2, villeEtape3);
   }
   
   

@@ -4,7 +4,7 @@ public class PlaneteTellurique extends  Planete implements Habitable{
 
 
   // Decris les vaisseaux et si il y a un vaisseau ou pas sinon un vaisseau doit s'en aller
-  public void acceuillirVaisseau(Vaisseau vaisseau){
+  public void acceuillirVaisseau(Vaisseau vaisseau, Vaisseau... vaisseaux) {
     
     if (vaisseau instanceof VaisseauDeguerre) {
       ((VaisseauDeguerre) vaisseau).activerBouclier();
